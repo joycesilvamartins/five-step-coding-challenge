@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <!-- Add your recipe title here -->
-    <title>My Recipe</title>
-    
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-	<body>
-		
-		<header>
-			<!-- Add your <h1>  here -->
-			<h1>My Favorite Brigadeiro Cake Recipe</h1>
-			<!-- we will add the image in a later challenge -->
-			image
 
-			<!-- Add your <p> here -->
-			<p>With its outstanding cocoa flavour, super moist crumb, and brigadeiro topping, this is truly the best brigadeiro cake.</p>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<!-- Add your recipe title here -->
+	<title>My Recipe</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link href="index.css" rel="stylesheet" type="text/css" />
+</head>
 
-		</header>
-		
-		<section>
-			<!-- Add your <h2>  here -->
-			<h2>Ingredients</h2>
-	    	<!-- Add your <ul> list here -->
-			<ul>
-			    <li>3 eggs</li>
-			    <li>1 cup white sugar</li>
-			    <li>1ù cup plain flour</li>
-			    <li>ù cup cornflour</li>
-			    <li>3 eggs</li>
-			    <li>ù cup cocoa powde</li>
-			    <li>ù cup oil</li>
-			    <li>1 cup warm water</li>
-			    <li>1 tbs baking powder</li>
-			</ul>
-		</section>
-		
-		<section>
-		<h2>Preparation</h2>	
-			<ol>
-			    <li>Preheat the oven to 180 degrees C. Butter a Ring Cake Tin ù22cm (8.6") and sprinkle chocolate powder.</li>
-                <li>In a large bowl, mix together the white sugar, eggs, oil and warm water. Sets aside.</li>
-                <li>In a medium bowl, sift plain flour, cornflour, chocolate powder, baking powder and mix them.</li>
-                <li>Pour the medium bowl mixture into the large bowl and mix them.</li>
-                <li>Pour the mixture into the prepared pan and bake for about 40 minutes or until a toothpick inserted in the centre comes out with just a few crumbs.</li>
+<body>
 
-			</ol>list
-		</section>
-		
-		<footer>
-			<p>Copyright Joy 2021</p>
-		</footer>
+	<header>
+		<!-- Add your <h1>  here -->
+		<h1>My Favorite Brigadeiro Cake Recipe</h1>
+		<!-- Add your <img> here -->
+		<img src="https://imgur.com/tJWD2KM.jpg" alt="Brigadeiro Cake">
 
-		<script src="script.js"></script>
-	</body>
+		<!-- Add your <p> here -->
+		<p>With its outstanding cocoa flavour, super moist crumb, and brigadeiro topping, this is truly the best
+			brigadeiro cake.</p>
+	</header>
+
+	<section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+		<!-- Add your <h2>  here -->
+		<h2>Ingredients <i class="fa fa-birthday-cake" aria-hidden="true"></i></h2>
+		<h3>Cake</h3>
+		<!-- Add your <ul> list here -->
+		<ul>
+			<li>3 eggs</li>
+			<li>1 cup white sugar</li>
+			<li>1 1/2 cup plain flour</li>
+			<li>1/2 cup cornflour</li>
+			<li>3 eggs</li>
+			<li>1/2 cup cocoa powde</li>
+			<li>1/2 cup oil</li>
+			<li>1 cup warm water</li>
+			<li>1 tbs baking powder</li>
+		</ul>
+		<h3>Topping</h3>
+		<ul>
+			<li>1 tbs butter</li>
+			<li>1 condensed milk(395 g)</li>
+			<li>3 tbs chocolate power</li>
+			<li>100 gr Creme Fraiche</li>
+		</ul>
+	</section>
+
+	<section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
+		<h2>Preparation <i class="fa fa-check-square-o" aria-hidden="true"></i></h2>
+		<h3>Cake</h3>
+		<ol>
+			<li>Preheat the oven to 180 degrees C. Butter a Ring Cake Tin 22cm (8.6") and sprinkle chocolate powder;</li>
+			<li>In a large bowl, mix together the white sugar, eggs, oil and warm water. Sets aside;</li>
+			<li>In a medium bowl, sift plain flour, cornflour, chocolate powder, baking powder and mix them;</li>
+			<li>Pour the medium bowl mixture into the large bowl and mix them;</li>
+			<li>Pour the mixture into the prepared pan and bake for about 40 minutes or until a toothpick inserted in
+				the centre comes out with just a few crumbs.</li>
+		</ol>
+		<h3>Topping</h3>
+		<ol>
+			<li>In a pot over low heat, melt the butter, condensed milk, and chocolate powder,stirring continuously until you can see the bottom of the pot for 2-3 seconds when
+				dragging a spatula through;
+			</li>
+			<li>Pour the Creme Fraiche and mix it;</li>
+			<li>Unmold cake. Pour the topping and decorate with chocolate sprinkles;</li>
+			<li>Pour the medium bowl mixture into the large bowl and mix them.</li>
+		</ol>
+
+	</section>
+	<script>
+		function ingredientsHover() {
+			document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = "300%";
+		}
+
+		function ingredientsNormal() {
+			document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = "100%";
+		}
+
+		function preparationHover() {
+			document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = "300%";
+		}
+
+		function preparationNormal(){
+			document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = "100%";
+		}
+	</script>
+
+	<footer>
+		<p>Copyright Joy 2021</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
 </html>
